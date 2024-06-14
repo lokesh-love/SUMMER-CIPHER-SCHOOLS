@@ -1,0 +1,30 @@
+Instantiation
+
+In Java, instantiation refers to the process of calling the constructor of a class to create an instance or object of that class. Creating an object of the class is known as instantiation, which allocates initial memory for the object and returns a reference to it. An object instantiation in Java provides the blueprint for the class.
+
+**Syntax for Instantiation:**
+```java
+ClassName objName = new ClassName();
+```
+or
+```java
+ClassName cn;
+cn = new ClassName();
+```
+
+### Ways to Create Instances
+
+1. **Using the `new` Keyword**
+2. **Using Static Factory Method**
+
+### Heap and Stack Memory
+
+**Stack Memory:**
+Stack memory is a physical space in RAM allocated to each thread at runtime. It is created when a thread is created. Memory management in the stack follows the Last-In-First-Out (LIFO) order and is accessible globally. It stores variables, references to objects, and partial results. Memory allocated to the stack persists until the function returns.
+
+**Heap Memory:**
+Heap memory is created when the JVM starts and is used by the application as long as it runs. It stores objects and JRE classes. Whenever objects are created, they occupy space in the heap memory while references to those objects are stored in the stack. The heap does not follow any particular order and handles memory blocks dynamically.
+
+### Garbage Collection
+
+Garbage collection in Java is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that runs on the Java Virtual Machine (JVM). When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects are no longer needed. The garbage collector identifies these unused objects and deletes them to free up memory.
